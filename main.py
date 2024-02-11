@@ -2,9 +2,9 @@
 # Fernando Duffoo
 # Mini Project 1
 
+import yfinance as yf
 import numpy as np
 import matplotlib.pyplot as plt
-import yfinance as yf
 
 # (5/5 points) Initial comments with your name, class and project at the top of your .py file.
 # (5/5 points) Proper import of packages used.
@@ -16,10 +16,32 @@ import yfinance as yf
 # (10/10 points) I will be checking out the main branch of your project. Please be sure to include a requirements.txt file which contains all the packages that need installed. You can create this fille with the output of pip freeze at the terminal prompt.
 # (20/20 points) There should be a README.md file in your project that explains what your project is, how to install the pip requirements, and how to execute the program. Please use the GitHub flavor of Markdown.
 
-tickers = ["MSFT"]
+tickers = ['AAPL', 'MSFT', 'GOOG', 'AMZN', 'TSLA']
+
+# Initialize
+closing_prices_list = []
 
 for ticker in tickers:
     myticker = yf.Ticker(ticker)
     history = myticker.history(start="2024-01-01", end="2024-01-10")
-    for date in history['Close']:
-        print(date)
+
+    # Append closing prices to the list
+    closing_prices_list.append(list(history['Close']))
+
+# Convert list to a np array
+closing_prices_array = np.array(closing_prices_list)
+
+# Plot and save charts
+for i, ticker in enumerate(tickers):
+    plt.figure(figsize=(8, 6))
+    plt.plot(closing_prices_array[i, :10], marker='o', linestyle='-', color='b')
+    plt.title(f'{ticker} - Closing Prices')
+    plt.xlabel('Day')
+    plt.ylabel('Closing Price')
+    plt.grid(True)
+    plt.savefig(f'charts/{ticker}_chart.png')
+    plt.show()  # Display the plot
+    plt.close()
+
+# Display
+print(closing_prices_array)
