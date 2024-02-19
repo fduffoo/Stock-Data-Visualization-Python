@@ -1,20 +1,47 @@
-# Mini Project 1
+### INF601 - Advanced Programming in Python
+### Fernando Duffoo
+### Mini Project 1
 
-This project will be using the packages NumPy and Matplotlib in order to create 5 graphs that output as PNG files.
 
+# Project Title
 
-## Installation
+Mini Project 1
 
-1. Clone the repository:
+## Description
 
-   ```bash
-   git clone https://github.com/fduffoo/miniproject1FernandoDuffoo.git
-   
-2. Install the required packages using pip:
+This project will utilize yFinance to gather the last 10 trading days of 5 stocks. It will put this information into a NumPy array and then use Matplotlib in order to create 5 graphs, then output as PNG files in the "charts" folder.
 
-    pip install -r requirements.txt
+## Getting Started
 
-3. Run the program with:
+### Install requirements with pip
 
-    python main.py
-    
+````
+pip install -r requirements.txt
+````
+
+### Executing program
+
+```
+python main.py
+```
+
+## Authors
+
+Contributors names and contact info
+
+ex. Fernando Duffoo
+
+## Version History
+
+* 0.1
+    * Initial Release
+
+## License
+
+This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
+
+## Acknowledgments
+
+Inspiration, code snippets, etc.
+* [Matplotlib](https://matplotlib.org/stable/tutorials/pyplot.html)
+* [Automatetheboringstuff.com](https://automatetheboringstuff.com/)
