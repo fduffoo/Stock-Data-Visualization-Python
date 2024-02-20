@@ -27,21 +27,14 @@ python main.py
 
 ## Authors
 
-Contributors names and contact info
-
-ex. Fernando Duffoo
+Fernando Duffoo
 
 ## Version History
 
 * 0.1
     * Initial Release
 
-## License
-
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
-
 ## Acknowledgments
 
-Inspiration, code snippets, etc.
 * [Matplotlib](https://matplotlib.org/stable/tutorials/pyplot.html)
 * [Automatetheboringstuff.com](https://automatetheboringstuff.com/)
