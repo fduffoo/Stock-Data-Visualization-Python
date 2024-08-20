@@ -1,11 +1,8 @@
-### INF601 - Advanced Programming in Python
 ### Fernando Duffoo
-### Mini Project 1
-
 
 # Project Title
 
-Mini Project 1
+Stock Data Visualization Python
 
 ## Description
 
