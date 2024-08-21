@@ -1,5 +1,3 @@
-### Fernando Duffoo
-
 # Project Title
 
 Stock Data Visualization Python
