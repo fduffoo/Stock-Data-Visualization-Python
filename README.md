@@ -1,6 +1,4 @@
-# Project Title
-
-Stock Data Visualization Python
+# Stock Data Visualization Python
 
 ## Description
 
