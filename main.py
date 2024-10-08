@@ -82,6 +82,7 @@ for i, ticker in enumerate(tickers):
     fig.add_trace(go.Scatter(x=dates, y=prices, mode='lines+markers', name=ticker))
     fig.update_layout(title=f'{ticker} - Closing Prices', xaxis_title='Date', yaxis_title='Closing Price')
     fig.show()
+<<<<<<< HEAD
 
 # Display correlation matrix
 correlations = np.corrcoef(closing_prices_array)
@@ -97,3 +98,22 @@ if __name__ == '__main__':
 
 # Display the closing prices array
 print(closing_prices_array)
+=======
+
+# Display correlation matrix
+correlations = np.corrcoef(closing_prices_array)
+print("Correlation Matrix:\n", correlations)
+
+# Flask route for web app (if deploying)
+@app.route('/')
+def index():
+    return render_template('index.html')
+
+if __name__ == '__main__':
+    app.run(debug=True)
+
+# Display the closing prices array
+print(closing_prices_array)
+
+
+>>>>>>> c2414919c44bd82286171cf2d893657ef7dcdddf
