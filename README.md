@@ -34,3 +34,4 @@ Fernando Duffoo
 
 * [Matplotlib](https://matplotlib.org/stable/tutorials/pyplot.html)
 * [Automatetheboringstuff.com](https://automatetheboringstuff.com/)
+  
